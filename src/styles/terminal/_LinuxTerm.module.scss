@@ -1,0 +1,14 @@
+@import "/src/styles/base/base";
+@import "/src/styles/base/colors";
+
+.terminal {
+  height: $baseTermHeight;
+  width: $baseTermWidth;
+  color: $secondary;
+  background-color: $termPrimary;
+  overflow-y: scroll;
+}
+
+.terminal input {
+  color: $secondary;
+}
