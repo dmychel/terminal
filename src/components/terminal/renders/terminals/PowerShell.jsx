@@ -1,18 +1,18 @@
 import RenderContent from "../RenderContent";
 import { useEffect } from "react";
 
-import styles from "/src/styles/terminal/_PowerShell.module.scss";
+import "/src/styles/terminal_base.scss";
 
 import PropTypes from "prop-types";
 
-const PowerShell = ({
+export default function PowerShell({
   renderComp,
   os,
   handleSubmit,
   handleKeyDown,
   command,
   setCommand,
-}) => {
+}) {
   useEffect(() => {
     console.log("window scroll run");
     const termEL = document.getElementById("terminal");
@@ -20,9 +20,9 @@ const PowerShell = ({
   }, [renderComp]);
 
   return (
-    <div className={styles.terminal} id="terminal">
-      <div className={styles.nav}>
-        <div className={styles.title}>
+    <div className="terminal" id="terminal">
+      <div className="nav">
+        <div className="title">
           <img src="" alt="" />
           <span>Dogmas PowerShell</span>
         </div>
@@ -42,7 +42,7 @@ const PowerShell = ({
       />
     </div>
   );
-};
+}
 
 PowerShell.propTypes = {
   renderComp: PropTypes.array,
@@ -52,5 +52,3 @@ PowerShell.propTypes = {
   command: PropTypes.string,
   setCommand: PropTypes.func,
 };
-
-export default PowerShell;
