@@ -3,7 +3,11 @@
   margin: 0;
 }
 
-.app {
+.terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
+  margin: auto;
 }
