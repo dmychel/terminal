@@ -7,7 +7,6 @@ import Help from "/src/components/terminal/Help";
 import Home from "/src/components/terminal/home/Home";
 import Projects from "/src/components/terminal/Projects";
 import RenderTerminal from "./components/terminal/renders/RenderTerminal";
-import LoadingPage from "./components/terminal/LoadingPage";
 import PrintTheme from "./components/terminal/renders/PrintTheme";
 import ThemeSet from "./components/terminal/renders/ThemeSet";
 
@@ -21,7 +20,7 @@ function App() {
   const [index, setIndex] = useState(0);
   const [cdIndex, setCdIndex] = useState(0);
   const [os, setOs] = useState("");
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const usersOS = navigator.userAgent;
 
   // list of cd commands for autocomplete
@@ -275,20 +274,16 @@ function App() {
   };
 
   return (
-    <>
-      {loading ? (
-        <LoadingPage os={os} setLoading={setLoading} />
-      ) : (
-        <RenderTerminal
-          renderComp={renderComp}
-          os={os}
-          handleSubmit={handleSubmit}
-          handleKeyDown={handleKeyDown}
-          command={command}
-          setCommand={setCommand}
-        />
-      )}
-    </>
+    <section className="app">
+      <RenderTerminal
+        renderComp={renderComp}
+        os={os}
+        handleSubmit={handleSubmit}
+        handleKeyDown={handleKeyDown}
+        command={command}
+        setCommand={setCommand}
+      />
+    </section>
   );
 }
 
