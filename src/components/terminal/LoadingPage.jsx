@@ -9,28 +9,27 @@ const Loading = ({ os, setLoading }) => {
 
   const determineMessage = () => {
     if (os === "Linux") {
-      console.log('Linux')
-      return linuxMessage()
+      console.log("Linux");
+      return linuxMessage();
     }
 
     if (os === "Windows") {
-      console.log('Windows')
-      return windowsMessage()
+      console.log("Windows");
+      return windowsMessage();
     }
 
     if (os === "Mac") {
-      console.log('Mac')
-      return appleMessage()
+      console.log("Mac");
+      return appleMessage();
     }
 
-    if (os === 'mobile') {
-      console.log('mobile')
-      return mobileMessage()
+    if (os === "mobile") {
+      console.log("mobile");
+      return mobileMessage();
+    } else {
+      return;
     }
-    else {
-      return
-    }
-  }
+  };
 
   const windowsMessage = () => {
     return (
@@ -112,16 +111,8 @@ const Loading = ({ os, setLoading }) => {
     );
   };
 
-  return (
-    <section className={styles.loading} > {determineMessage()}</section >
-  )
-
+  return <section className={styles.loading}> {determineMessage()}</section>;
 };
-
-
-
-
-
 
 Loading.propTypes = {
   os: PropTypes.string,
