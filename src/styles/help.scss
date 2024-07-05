@@ -1,0 +1,17 @@
+.command_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: 2px solid;
+  width: 40%;
+
+  .type_commands {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    span {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

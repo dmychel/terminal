@@ -1,0 +1,13 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: 2px solid;
+  width: fit-content;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
