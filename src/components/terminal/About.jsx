@@ -16,21 +16,18 @@ const About = () => {
       <div className={styles.contact}>
         <div>
           <span>
-            <img src="/assets/icons/mail.png" alt="mail" />
             <p>Email</p>
           </span>
           <p>dyloncrowley86@gmail.com</p>
         </div>
         <div>
           <span>
-            <img src="/assets/icons/github.png" alt="github" />
             <p>Github</p>
           </span>
           <p>https://github.com/dmychel</p>
         </div>
         <div>
           <span>
-            <img src="/assets/icons/linkedin.png" alt="linkedin" />
             <p>LinkedIN</p>
           </span>
           <p>https://www.linkedin.com/in/dylon-crowley-perez-248b0823b/</p>
