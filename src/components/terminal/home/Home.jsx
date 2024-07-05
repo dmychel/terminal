@@ -2,18 +2,16 @@ import UserInfo from "./UserInfo";
 import Ascii from "./ascii/Ascii";
 import PropTypes from "prop-types";
 
-import styles from "/src/styles/terminal/home.module.scss";
+import "/src/styles/home.scss";
 
 const Home = ({ os }) => {
   return (
-    <section className={styles.home}>
-      <div className={styles.hero}>
+    <section className="home">
+      <div className="hero">
         <Ascii os={os} />
         <UserInfo os={os} />
       </div>
-      <span className={styles.help}>
-        Type &apos;help&apos; for a list of commands
-      </span>
+      <span className="help">Type &apos;help&apos; for a list of commands</span>
     </section>
   );
 };

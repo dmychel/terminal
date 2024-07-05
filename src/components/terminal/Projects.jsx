@@ -1,9 +1,9 @@
-import styles from "/src/styles/terminal/projects.module.scss";
+import "/src/styles/projects.scss";
 
 const Projects = () => {
   return (
-    <section className={styles.projects}>
-      <div className={styles.tip}>
+    <section className="projects">
+      <div className="tip">
         <span>Tip:</span> Try typing
         <span style={{ marginLeft: "1%" }}>
           &apos;<span style={{ color: "cyan" }}>cd windfall-matchup</span>&apos;

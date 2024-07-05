@@ -2,7 +2,7 @@ import RenderContent from "../RenderContent";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 
-import styles from "/src/styles/terminal/_LinuxTerm.module.scss";
+import "/src/styles/terminal_base.scss";
 
 const LinuxTerm = ({
   renderComp,
@@ -19,7 +19,7 @@ const LinuxTerm = ({
   }, [renderComp]);
 
   return (
-    <div className={styles.terminal} id="terminal">
+    <div className="alacritty" id="terminal">
       <RenderContent
         renderComp={renderComp}
         os={os}

@@ -20,18 +20,17 @@ export default function PowerShell({
   }, [renderComp]);
 
   return (
-    <div className="terminal" id="terminal">
-      <div className="nav">
+    <div className="power_shell" id="terminal">
+      <nav>
         <div className="title">
-          <img src="" alt="" />
           <span>Dogmas PowerShell</span>
         </div>
-        <nav>
+        <div className="menu">
           <span>&minus;</span>
           <span>&#128470;</span>
           <span>&#128473;</span>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <RenderContent
         renderComp={renderComp}
         os={os}

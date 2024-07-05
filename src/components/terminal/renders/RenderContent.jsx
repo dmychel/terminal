@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import CommandLine from "/src/components/terminal/CommandLine";
 
-import styles from "/src/styles/terminal/terminal.module.scss";
+import "/src/styles/terminal_base.scss";
 
 const RenderContent = ({
   renderComp,
@@ -12,7 +12,7 @@ const RenderContent = ({
   setCommand,
 }) => {
   return (
-    <div className={styles.content}>
+    <div className="content">
       {renderComp.map((comp) => {
         const CompName = comp;
         return <CompName key={crypto.randomUUID()} os={os} />;

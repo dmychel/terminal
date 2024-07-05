@@ -1,39 +1,39 @@
-import styles from "/src/styles/terminal/commandList.module.scss";
+import "/src/styles/help.scss";
 
 const CommandList = () => {
   return (
-    <section className={styles.commandList}>
-      <div className={styles.typeCommands}>
+    <section className="command_list">
+      <div className="type_commands">
         <span>
-          <p className={styles.command}>&apos;about&apos;</p>
+          <p className="command">&apos;about&apos;</p>
           <p>About this cool guy</p>
         </span>
         <span>
-          <p className={styles.command}>&apos;projects&apos;</p>
+          <p className="command">&apos;projects&apos;</p>
           <p>A reason for you to hire me</p>
         </span>
         <span>
-          <p className={styles.command}>&apos;resume&apos;</p>
+          <p className="command">&apos;resume&apos;</p>
           <p>View my resume</p>
         </span>
         <span>
-          <p className={styles.command}>&apos;cd&apos;</p>
+          <p className="command">&apos;cd&apos;</p>
           <p>Change directory</p>
         </span>
         <span>
-          <p className={styles.command}>&apos;exit&apos;</p>
+          <p className="command">&apos;exit&apos;</p>
           <p>Normal view</p>
         </span>
         <span>
-          <p className={styles.command}>&apos;theme set&apos;</p>
+          <p className="command">&apos;theme set&apos;</p>
           <p>Change terminal style</p>
         </span>
         <span>
-          <p className={styles.command}>&apos;clear&apos;</p>
+          <p className="command">&apos;clear&apos;</p>
           <p>Clear the terminal</p>
         </span>
       </div>
-      <div className={styles.keyboardShortcuts}>
+      <div className="keyboardShortcuts">
         <div>
           Press <span style={{ color: "rgb(153, 153, 0)" }}>[Tab]</span> to auto
           complete

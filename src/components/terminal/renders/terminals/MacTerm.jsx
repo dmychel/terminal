@@ -1,7 +1,7 @@
 import RenderContent from "../RenderContent";
 import { useEffect } from "react";
 import PropTypes from "prop-types";
-import styles from "/src/styles/terminal/_MacTerm.module.scss";
+import "/src/styles/terminal_base.scss";
 
 const MacTerm = ({
   renderComp,
@@ -18,18 +18,17 @@ const MacTerm = ({
   }, [renderComp]);
 
   return (
-    <div className={styles.terminal} id="terminal">
-      <div className={styles.nav}>
-        <nav>
-          <span className={styles.exit}></span>
-          <span className={styles.min}></span>
-          <span className={styles.max}></span>
-        </nav>
-        <div className={styles.title}>
-          <img src="" alt="" />
+    <div className="mac" id="terminal">
+      <nav>
+        <div className="menu">
+          <span className="exit"></span>
+          <span className="min"></span>
+          <span className="max"></span>
+        </div>
+        <div className="title">
           <span>Pear Terminal</span>
         </div>
-      </div>
+      </nav>
       <RenderContent
         renderComp={renderComp}
         os={os}
