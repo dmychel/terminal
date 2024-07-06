@@ -1,0 +1,15 @@
+.ascii_wrapper {
+    display: flex;
+  }
+  
+  .ascii_art {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 0.75rem;
+    height: 100%;
+  }
+  
