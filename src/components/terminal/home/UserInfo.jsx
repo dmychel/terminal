@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import '/src/styles/user_info.scss'
 
 const UserInfo = ({ os }) => {
   return (
-    <section className="userInfoContainer">
-      <div className="userInfo">
+    <section className="user_info_container">
+      <div className="user_info">
         <span>
           OS: <p>{os}</p>
         </span>
@@ -14,7 +15,7 @@ const UserInfo = ({ os }) => {
           Packages: <p>351 packages audited (npm)</p>
         </span>
         <span>
-          Theme: <p>Alacritty</p>
+          Theme: <p>{os}</p>
         </span>
         <span>
           Terminal: <p>Best terminal you&apos;ve ever used</p>
