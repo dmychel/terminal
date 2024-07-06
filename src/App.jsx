@@ -87,12 +87,12 @@ function App() {
 
   const checkAutoComplete = () => {
     if (command.includes("cd")) cycleCdComms();
-    if (command.includes("ab")) setCommand("about");
-    if (command.includes("pro")) setCommand("projects");
+    if (command.includes("ab")) setCommand("cdabout");
+    if (command.includes("pro")) setCommand("cd projects");
     if (command.includes("ex")) setCommand("exit");
     if (command.includes("cl")) setCommand("clear");
     if (command.includes("he")) setCommand("help");
-    if (command.includes("res")) setCommand("resume");
+    if (command.includes("tou")) setCommand("touch resume");
     else return;
   };
 
