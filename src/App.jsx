@@ -26,6 +26,8 @@ function App() {
 
   // list of cd commands for autocomplete
   const cdCommands = [
+    "about",
+    "projects",
     "windfall-matchup",
     "node-message-board",
     "video-game-archive",
@@ -56,7 +58,8 @@ function App() {
         "url('/assets/backgrounds/arch.png')";
       return setOs("Linux");
     } else {
-      document.body.style.backgroundImage = "url('/assets/backgrounds/android.jpg')";
+      document.body.style.backgroundImage =
+        "url('/assets/backgrounds/android.jpg')";
       return setOs("Mobile");
     }
   }, [usersOS]);
@@ -119,14 +122,14 @@ function App() {
 
   const cycleCdComms = () => {
     let arr = cdCommands;
-    if (cdIndex === 7) {
+    if (cdIndex === 9) {
       const input = arr.at(0);
-      setCommand("cd " + input);
       setCdIndex(0);
-    } else {
-      const input = arr.at(cdIndex + 1);
       setCommand("cd " + input);
+    } else {
+      let input = arr.at(cdIndex);
       setCdIndex(cdIndex + 1);
+      setCommand("cd " + input);
     }
   };
 
@@ -149,7 +152,8 @@ function App() {
       return setOs("Linux");
     }
     if (theme === "Mobile") {
-      document.body.style.backgroundImage = "url('/assets/backgrounds/android.jpg')";
+      document.body.style.backgroundImage =
+        "url('/assets/backgrounds/android.jpg')";
       return setOs("Mobile");
     }
   };
