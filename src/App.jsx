@@ -11,6 +11,7 @@ import PrintTheme from "./components/terminal/renders/PrintTheme";
 import ThemeSet from "./components/terminal/renders/ThemeSet";
 
 // STYLES
+import "./App.css";
 
 function App() {
   // useState
@@ -40,22 +41,22 @@ function App() {
   useEffect(() => {
     if (usersOS.includes("Windows")) {
       document.body.style.backgroundImage =
-        "url('/assets/imgs/windows-background.jpg')";
+        "url('/assets/backgrounds/windows.webp')";
       return setOs("Windows");
     }
 
     if (usersOS.includes("Mac")) {
       document.body.style.backgroundImage =
-        "url('/assets/imgs/apple-background.jpg')";
+        "url('/assets/backgrounds/mac.jpg')";
       return setOs("Mac");
     }
 
     if (usersOS.includes("X11" || "Linux")) {
       document.body.style.backgroundImage =
-        "url('/assets/imgs/arch-background.png')";
+        "url('/assets/backgrounds/arch.png')";
       return setOs("Linux");
     } else {
-      document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
+      document.body.style.backgroundImage = "url('/assets/backgrounds/android.jpg')";
       return setOs("Mobile");
     }
   }, [usersOS]);
@@ -132,23 +133,23 @@ function App() {
   const setTheme = (theme) => {
     if (theme === "Windows") {
       document.body.style.backgroundImage =
-        "url('/assets/imgs/windows-background.jpg')";
+        "url('/assets/backgrounds/windows.webp')";
       return setOs("Windows");
     }
 
     if (theme === "Mac") {
       document.body.style.backgroundImage =
-        "url('/assets/imgs/apple-background.jpg')";
+        "url('/assets/backgrounds/mac.jpg')";
       return setOs("Mac");
     }
 
     if (theme === "X11" || theme === "Linux") {
       document.body.style.backgroundImage =
-        "url('/assets/imgs/arch-background.png')";
+        "url('/assets/backgrounds/arch.png')";
       return setOs("Linux");
     }
     if (theme === "Mobile") {
-      document.body.style.backgroundImage = "url('/assets/imgs/android.png')";
+      document.body.style.backgroundImage = "url('/assets/backgrounds/android.jpg')";
       return setOs("Mobile");
     }
   };
@@ -274,7 +275,7 @@ function App() {
   };
 
   return (
-    <section className="app">
+    <div className="terminal">
       <RenderTerminal
         renderComp={renderComp}
         os={os}
@@ -283,7 +284,7 @@ function App() {
         command={command}
         setCommand={setCommand}
       />
-    </section>
+    </div>
   );
 }
 
