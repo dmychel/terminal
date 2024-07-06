@@ -157,11 +157,11 @@ function App() {
   // COMMAND HANDLER
   const handleCommand = (input) => {
     switch (input) {
-      case "about": {
+      case "cd about": {
         setRenderComp([...renderComp, About]);
         break;
       }
-      case "projects": {
+      case "cd projects": {
         setRenderComp([...renderComp, Projects]);
         break;
       }
@@ -179,7 +179,7 @@ function App() {
         break;
       }
 
-      case "cd ~": {
+      case "neofetch": {
         setRenderComp([...renderComp, Home]);
         break;
       }
@@ -261,9 +261,9 @@ function App() {
         }
         break;
 
-      case "resume":
+      case "touch resume":
         {
-          window.open("/assets/imgs/resume.pdf", "_blank");
+          window.open("/assets/other/art_tech_resume.pdf", "_blank");
         }
         break;
       default: {
