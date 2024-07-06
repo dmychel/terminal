@@ -21,7 +21,7 @@ Feature: After the term detects your operating system, rather than just giving y
 
 ## Other:
 
-This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
+This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS to scale and organize classnames with more ease.
 
 <br/>
 
