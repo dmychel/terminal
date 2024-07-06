@@ -1,34 +1,33 @@
-# My Portfolio!
+# My terminal portfolio!
 
 I think it's pretty cool, you should check it out here => <a href='https://dyloncrowley.dev/'>Click Me</a>
 
-## Why a terminal view?
+## Version 2.2.0
 
-The simple reason - I'm not great at UI design. Being color blind it can be difficult selecting colors that stand out to me, while simultaneously look cohesive to a normal persons eyes. About 3 years ago I decided to switch my daily driver from Windows to Arch linux. Ever since I've become very passionate about the idea of Linux and open source. If it wasn't for Linux I'm not sure I would have ever discovered, or even attempted Web Development. And lets be honest, a terminal is pretty cool.
+### Dev Notes
 
-## Version 1.3.0 (Current)
+This project was originally built on one of my old portfolio repos that has since been deleted. I made the noob mistake of accidentally merging two seperate projects and bricked my portfolio:). No worries though, I was able to go to a previous commit and extract all of the files to make a new clean repo. The Terminal is mostly the same with a few tweaks to the commands. This version seems to have a bug when cycling through the "cd" commands, which i am working on fixing. It is important to note that this project is not yet mobile responsive, so I cannot gurantee a pleasent viewing experience if you are viewing this project on a phone.
 
-This version includes everything from the previous version.
-This version includes everything from the previous version excpet for the uptime tracker.
+### Additions:
 
-<br/>
-
-#### 1.3 additions: 
-- When the user changes there terminal theme, the background will also change based on the theme the user selects
+- When the user changes their terminal theme, the background will also change based on the theme the user selects
 - Added a mobile terminal theme
 
 Feature: After the term detects your operating system, rather than just giving you a specialized entry message and ASCII art, the app will render a custom terminal based on the OS.
 
-<br/>
+### Bug fixes:
 
-### Bug fixes: 
 - Custom terminal message now displays the correct message based on users OS rather than defaulting to the catch all message.
 
-Other: This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
+## Other:
+
+This projects' styling has been completely migrated to scss. While trying to add multiple terminals I quickly realized the way css applies styling globally ,would make styling a lot more convoluted than it should be. I decided to use SCSS for use of its modules and variables. Now the styling should be easily scalable.
 
 <br/>
 
-2.1 Additions: User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
+## Version 2.1.0
+
+Additions: User can now set the terminal theme by typing in the command 'theme set'. The terminal will give a list of themes the user can use. The user info Kernel now displays the curret app version.
 
 ## Version 1.1.0
 
@@ -37,7 +36,6 @@ Version 1.1.0 includes everything from the previous version with the addition of
 ## Version 1.0.0
 
 Version 1.0.0 includes two viewing modes: 'Normie' and and Developer view. Normie view is intended for non technical viewers who may find the terminal overwhelming or confusing. This should not discourage you though! If you read the prompts it should walk you through exactly how to navigate the terminal.
-
 
 ## Version 1.1.0
 
