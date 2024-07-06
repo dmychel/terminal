@@ -170,7 +170,7 @@ function App() {
         break;
       }
       case "exit": {
-        window.open("/normie", "_self");
+        window.open("https://dyloncrowley.dev", "_blank");
         break;
       }
       case "clear": {
