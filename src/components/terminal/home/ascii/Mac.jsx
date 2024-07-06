@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import styles from '/src/styles/terminal/ascii.module.scss'
+import "/src/styles/ascii_art.scss";
+
 const Mac = () => {
     return (
-        <div className={styles.asciiArt}>
+        <div className='ascii_art'>
            <span>                        .8            </span>
            <span>                      .888            </span>
            <span>                    .8888'            </span>

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
+
 import Windows from "./Windows";
 import Mac from "./Mac";
 import Linux from "./Linux";
 import Default from "./Default";
 
-import styles from "/src/styles/terminal/ascii.module.scss";
-
+import "/src/styles/ascii_art.scss";
 
 const Ascii = ({ os }) => {
   const dynamicComp = () => {
@@ -13,10 +13,10 @@ const Ascii = ({ os }) => {
     if (os === "Mac") return <Mac />;
     if (os === "Linux") return <Linux />;
     else {
-      return <Default/>
+      return <Default />;
     }
   };
-  return <section className={styles.asciiWrapper}>{dynamicComp()}</section>;
+  return <section className="asciiWrapper">{dynamicComp()}</section>;
 };
 
 Ascii.propTypes = {

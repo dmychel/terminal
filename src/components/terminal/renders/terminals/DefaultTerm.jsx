@@ -2,7 +2,7 @@ import RenderContent from "../RenderContent";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 
-import styles from "/src/styles/terminal/_DefaultTerm.module.scss";
+import "/src/styles/terminal_base.scss";
 
 const DefaultTerm = ({
   renderComp,
@@ -19,7 +19,7 @@ const DefaultTerm = ({
   }, [renderComp]);
 
   return (
-    <div className={styles.terminal} id="terminal">
+    <div className="default" id="terminal">
       <RenderContent
         renderComp={renderComp}
         os={os}

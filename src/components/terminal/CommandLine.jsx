@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 
+import '/src/styles/terminal_base.scss'
+
 const CommandLine = ({ handleSubmit, handleKeyDown, command, setCommand }) => {
   return (
-    <section className="commandLine">
+    <section className="command_line">
       <form onSubmit={handleSubmit}>
         <label>{">"}</label>
         <input
