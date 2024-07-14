@@ -1,6 +1,6 @@
 # My terminal portfolio!
 
-I think it's pretty cool, you should check it out here => <a href='https://dyloncrowley.dev/'>Click Me</a>
+I think it's pretty cool, you should check it out here => <a href='https://dyloncrowley.dev](https://terminal-project.netlify.app/'>Click Me</a>
 
 ## Version 2.2.0
 
