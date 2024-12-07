@@ -95,7 +95,7 @@ function App() {
     if (command.includes("ex")) setCommand("exit");
     if (command.includes("cl")) setCommand("clear");
     if (command.includes("he")) setCommand("help");
-    if (command.includes("tou")) setCommand("touch resume");
+    // if (command.includes("tou")) setCommand("touch resume");
     else return;
   };
 
@@ -265,11 +265,11 @@ function App() {
         }
         break;
 
-      case "touch resume":
-        {
-          window.open("/assets/other/art_tech_resume.pdf", "_blank");
-        }
-        break;
+      // case "touch resume":
+      //   {
+      //     window.open("/assets/other/art_tech_resume.pdf", "_blank");
+      //   }
+      //   break;
       default: {
         alert(
           `'${input}' is not a command. Type 'help' for a list of commands`

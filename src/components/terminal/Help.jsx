@@ -12,10 +12,10 @@ const CommandList = () => {
           <p className="command">&apos;cd projects&apos;</p>
           <p>A reason for you to hire me</p>
         </span>
-        <span>
+        {/* <span>
           <p className="command">&apos;touch resume&apos;</p>
           <p>View my resume</p>
-        </span>
+        </span> */}
         <span>
           <p className="command">&apos;neofetch&apos;</p>
           <p>Change directory</p>

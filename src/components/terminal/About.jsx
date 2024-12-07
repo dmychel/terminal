@@ -27,10 +27,10 @@ const About = () => {
           <p>https://github.com/dmychel</p>
         </div>
         <div>
-          <span>
+          {/* <span>
             <p>LinkedIN</p>
           </span>
-          <p>https://www.linkedin.com/in/dylon-crowley-perez-248b0823b/</p>
+          <p>https://www.linkedin.com/in/dylon-crowley-perez-248b0823b/</p> */}
         </div>
       </div>
     </section>
